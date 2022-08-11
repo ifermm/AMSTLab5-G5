@@ -9,7 +9,7 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginView extends State<LoginView> {
-  String _imageBackground = "bg2.jpg";
+  String _imageBackground = "b1.jpg";
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _LoginView extends State<LoginView> {
               children: [
                 Container(height: 300),
                 const Text(
-                  "EcommerceApp",
+                  "GamesApp",
                   style: TextStyle(
                       fontSize: 36,
                       fontWeight: FontWeight.bold,
@@ -53,7 +53,7 @@ class _LoginView extends State<LoginView> {
                 ),
                 Container(height: 16),
                 const Text(
-                  "Ejemplo de aplicación",
+                  "Grupo 5",
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class _LoginView extends State<LoginView> {
                 ),
                 Container(height: 8),
                 const Text(
-                    "Aplicación de ejemplo para el laboratorio",
+                    "Desafío del Lab5",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),

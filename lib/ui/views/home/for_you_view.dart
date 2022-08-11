@@ -37,7 +37,7 @@ class _ForYouView extends State<ForYouView> {
           ),
         ],
         title: Text(
-          "For You",
+          "Para ti, disfruta de tu juego",
           style: TextStyle(color: AppColors.text_light),
         ),
       ),
@@ -51,7 +51,7 @@ class _ForYouView extends State<ForYouView> {
         _carousel(),
         Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Discounts",
+          child: Text("Descuentos en juegos",
               style: TextStyle(
                   color: AppColors.text_light,
                   fontSize: 34,
@@ -60,7 +60,7 @@ class _ForYouView extends State<ForYouView> {
         _promo(),
         Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Shirts",
+          child: Text("Juegos entre amigos",
               style: TextStyle(
                   color: AppColors.text_light,
                   fontSize: 30,
@@ -69,13 +69,22 @@ class _ForYouView extends State<ForYouView> {
         _shirts(),
         Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Pants",
+          child: Text("Tacical Shooters",
               style: TextStyle(
                   color: AppColors.text_light,
                   fontSize: 30,
                   fontWeight: FontWeight.bold)),
         ),
         _pants(),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text("Beneficios de Jugar",
+              style: TextStyle(
+                  color: AppColors.text_light,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold)),
+        ),
+        _beneficios(),
       ],
     );
   }
@@ -93,9 +102,9 @@ class _ForYouView extends State<ForYouView> {
         autoPlayInterval: Duration(seconds: 8),
       ),
       items: [
-        _carouselImage("assets/images/carousel1.jpg"),
-        _carouselImage("assets/images/carousel2.jpg"),
-        _carouselImage("assets/images/carousel3.jpg"),
+        _carouselImage("assets/images/g1.jpg"),
+        _carouselImage("assets/images/g2.jpg"),
+        _carouselImage("assets/images/g3.jpg"),
       ],
     );
   }
@@ -218,6 +227,24 @@ class _ForYouView extends State<ForYouView> {
         child: Row(
           children: _itemListShirts(),
         ),
+      ),
+    );
+  }
+  Widget _beneficios() {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: EdgeInsets.only(right: 50),
+        child: Text("\n  Jugar es bueno porque mejora la capacidad de  \n"
+            "  respuesta, fomenta el trabajo en equipo, \n"
+            "  mejora la estrategia y el liderazgo. "
+            "\n"
+            "\n"
+            "",
+            style: TextStyle(
+                color: AppColors.text_light,
+                fontSize: 15,
+                fontStyle: FontStyle.italic)),
       ),
     );
   }
